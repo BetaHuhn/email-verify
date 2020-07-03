@@ -10,17 +10,15 @@ import log from "./utils/log";
 import status from "./utils/status";
 
 import appRouter from "./router/app";
-import { routeLog } from "./middleware/middleware";
 
-app.use(routeLog());
 app.use(express.static("client/dist"));
 app.use(express.json({ limit: "1mb" }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(compression());
 app.use(helmet());
-var corsOptions = {
-  origin: ["https://" + process.env.DOMAIN],
+const corsOptions = {
+  origin: (process.env.ORIGIN != undefined) ? process.env.ORIGIN.split(',') : '*',
   methods: ["GET", "OPTIONS", "POST"],
 };
 app.use(cors(corsOptions));

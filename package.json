@@ -1,13 +1,13 @@
 {
   "name": "email-verify",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Verify email addresses",
   "main": "build/index.js",
   "scripts": {
     "client:serve": "cd client && npx vue-cli-service serve",
     "client:build": "cd client && npx vue-cli-service build",
     "client:lint": "cd client && npx vue-cli-service lint",
-    "test": "nyc --reporter=html --reporter=text ava",
+    "test": "nyc --reporter=html --reporter=text ava -T 40s",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "server:dev": "./node_modules/.bin/tsc-watch --onSuccess \"sudo DEBUG=server:* nodemon ./build/index.js\"",
     "server:watch": "tsc -w -p tsconfig.json",

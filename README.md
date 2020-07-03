@@ -34,7 +34,9 @@ nano .env
 Add:
 
 ```
-DOMAIN=Your domain; defaults to verify.mxis.ch
+ORIGIN=Cors Origin, split with ","; defaults to '*'
+HOSTNAME=Hostname which will be sent during SMTP session; defaults to verify.mxis.ch
+FROM_ADDRESS=From Address which will be used during validation (no emails will be sent there); defaults to no-reply@verify.mxis.ch
 PORT=Port the server runs on; defaults to 3000
 ```
 

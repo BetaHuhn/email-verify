@@ -4,6 +4,7 @@ import yxc, { connect } from "@dotvirus/yxc";
 import { Regex } from "../utils/regex";
 import { sendResult } from "../middleware/middleware";
 import status from "../utils/status";
+import { routeLog } from "../middleware/middleware";
 import log from "../utils/log";
 import { verify } from "../utils/verify";
 import fs from "fs";
@@ -33,6 +34,7 @@ const limit = rateLimit({
 router.post(
   "/api/v1/check",
   limit,
+  routeLog(),
   connect({
     body: yxc.object({
       email: yxc.string().regex(Regex.email)
