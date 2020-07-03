@@ -1,7 +1,8 @@
-# email-verify
-[![Build Status](https://travis-ci.org/BetaHuhn/email-verify.svg?branch=master)](https://travis-ci.org/BetaHuhn/email-verify) [![Coverage Status](https://coveralls.io/repos/github/BetaHuhn/email-verify/badge.svg?branch=master)](https://coveralls.io/github/BetaHuhn/email-verify?branch=master)
+# email-verify - Quickly verify email addresses
+![Preview Image](preview.png)
+> Quickly verify email addresses
 
-Quickly verify email addresses
+[![Build Status](https://travis-ci.org/BetaHuhn/email-verify.svg?branch=master)](https://travis-ci.org/BetaHuhn/email-verify) [![Coverage Status](https://coveralls.io/repos/github/BetaHuhn/email-verify/badge.svg?branch=master)](https://coveralls.io/github/BetaHuhn/email-verify?branch=master)
 
 ## Live Website
 
