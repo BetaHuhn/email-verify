@@ -1,0 +1,18 @@
+{
+  "exclude": [
+    "node_modules/",
+    "tests/"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types"
+    ],
+    "esModuleInterop": true
+  }
+}
