@@ -1,0 +1,14 @@
+{
+    "name": "Email Verifier",
+    "short_name": "Email-Verifier",
+    "description": "Quickly and easily verify an email address",
+    "start_url": "https://verify.mxis.ch",
+    "display": "standalone",
+    "theme_color": "#ff4848",
+    "background_color": "#3a506b",
+    "icons": [{
+        "src": "./static/favicon.png",
+        "sizes": "500x500",
+        "type": "image/png"
+    }]
+}
