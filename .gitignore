@@ -1,0 +1,9 @@
+build/
+node_modules/
+.env
+.git
+logs
+*.log
+.nyc_output
+coverage/
+.coveralls.yml
