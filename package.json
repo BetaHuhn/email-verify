@@ -1,7 +1,8 @@
 {
   "name": "email-verify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Verify email addresses",
+  "author": "Maximilian Schiller <hello@mxis.ch>",
   "main": "build/index.js",
   "scripts": {
     "client:serve": "cd client && npx vue-cli-service serve",
@@ -15,7 +16,6 @@
     "server:start": "cross-env DEBUG=server:* nodemon ./build/index.js",
     "pm2": "sudo pm2 start ./build/index.js --name email-verify"
   },
-  "author": "Maximilian Schiller",
   "repository": {
     "type": "git",
     "url": "https://github.com/BetaHuhn/email-verify.git"
